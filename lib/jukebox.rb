@@ -77,7 +77,7 @@ def run(songs)
       puts "Please enter a command:"
       user_says = gets.strip
     when "exit"
-      break if user_says == "exit"
+      break
     end
   end
   exit_jukebox
