@@ -62,6 +62,7 @@ def run(songs)
   help 
   puts "Please enter a command:"
   user_says = gets.strip 
+  loop do
     if user_says == "help"
       help
     elsif user_says == "list"
@@ -69,7 +70,9 @@ def run(songs)
     elsif user_says == "play"
       play(songs)
     elsif user_says == "exit"
+      break
     end
+  end
   exit_jukebox
 end
 
