@@ -66,16 +66,16 @@ def run(songs)
   case user_says
     when "help"
       help
-       user_says = gets.strip
        puts "Please enter a command:"
+       user_says = gets.strip
     when "list"
       list(songs)
-       user_says = gets.strip
        puts "Please enter a command:"
+       user_says = gets.strip
     when "play"
       play(songs)
-       user_says = gets.strip
        puts "Please enter a command:"
+       user_says = gets.strip
     when "exit"
       break
     end
