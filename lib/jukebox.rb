@@ -40,7 +40,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.chomp
-    if user_response == songs()
+    if songs.include?(user_response)
       puts "Playing #{song}"
     when "#{index + 1}"
       puts "Playing #{songs[index]}"
