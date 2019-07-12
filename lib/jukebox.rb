@@ -63,13 +63,13 @@ def run(songs)
   puts "Please enter a command:"
   user_says = gets.strip 
   case user_says
-    if user_says == "help"
+    when "help"
       help
-    elsif user_says == "list"
+    when "list"
       list(songs)
-    elsif user_says == "play"
+    when "play"
       play(songs)
-    elsif user_says == "exit"
+    when "exit"
       break
     end
   end
