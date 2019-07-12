@@ -62,6 +62,7 @@ def run(songs)
   help 
   puts "Please enter a command:"
   user_says = gets.strip 
+  loop do 
   case user_says
     when "help"
       help
@@ -70,7 +71,9 @@ def run(songs)
     when "play"
       play(songs)
     when "exit"
+      break
     end
+  end
   exit_jukebox
 end
 
