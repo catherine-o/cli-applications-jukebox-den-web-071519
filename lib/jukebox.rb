@@ -67,12 +67,15 @@ def run(songs)
     when "help"
       help
        user_says = gets.strip
+       puts "Please enter a command:"
     when "list"
       list(songs)
        user_says = gets.strip
+       puts "Please enter a command:"
     when "play"
       play(songs)
        user_says = gets.strip
+       puts "Please enter a command:"
     when "exit"
       break
     end
