@@ -42,9 +42,10 @@ def play(songs)
   user_response = gets.chomp
   songs.each_with_index do |song, index|
     song_number = index + 1
-    if user_response == song
+    case user_response
+    when song
       puts "Playing #{song}"
-    elsif user_response == "#{index + 1}"
+    when "#{index + 1}"
       puts "Playing #{songs[index]}"
     else 
       puts "Invalid input, please try again"
