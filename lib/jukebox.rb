@@ -62,7 +62,7 @@ def run(songs)
   help 
   puts "Please enter a command:"
   user_says = gets.strip 
-  loop do
+  case user_says
     if user_says == "help"
       help
     elsif user_says == "list"
