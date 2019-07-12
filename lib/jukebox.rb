@@ -41,8 +41,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.chomp
     if songs.include?(user_response)
-      puts "Playing #{song}"
-    when "#{index + 1}"
+      puts "Playing #{user_response}"
+    elsif songs.
       puts "Playing #{songs[index]}"
     else 
       puts "Invalid input, please try again"
