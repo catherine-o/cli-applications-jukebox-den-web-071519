@@ -40,8 +40,6 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.chomp
-  songs.each_with_index do |song, index|
-    song_number = index + 1
     case user_response
     when song
       puts "Playing #{song}"
